@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Hub - The Future of Urban Living</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom gradient background for the Hero section */
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0c4a6e 100%);
+        }
+        /* Custom active state for navigation */
+        .nav-link.active {
+            @apply border-b-2 border-indigo-300 font-semibold text-white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-extrabold text-indigo-700 tracking-tight">
+                    SmartCity<span class="text-green-500">Hub</span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-500 hover:text-indigo-600 transition duration-150 ease-in-out px-1 py-4 active">Home</a>
+                    <a href="#tech" class="nav-link text-gray-500 hover:text-indigo-600 transition duration-150 ease-in-out px-1 py-4">Technology</a>
+                    <a href="#transport" class="nav-link text-gray-500 hover:text-indigo-600 transition duration-150 ease-in-out px-1 py-4">Transport</a>
+                    <a href="#map" class="nav-link text-gray-500 hover:text-indigo-600 transition duration-150 ease-in-out px-1 py-4">Map</a>
+                    <a href="#eco" class="nav-link text-gray-500 hover:text-indigo-600 transition duration-150 ease-in-out px-1 py-4">Eco</a>
+                    <a href="#services" class="nav-link text-gray-500 hover:text-indigo-600 transition duration-150 ease-in-out px-1 py-4">Services</a>
+                    <a href="#contact" class="nav-link text-gray-500 hover:text-indigo-600 transition duration-150 ease-in-out px-1 py-4">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-600" aria-current="page">Home</a>
+                <a href="#tech" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Technology</a>
+                <a href="#transport" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Transport</a>
+                <a href="#map" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Map</a>
+                <a href="#eco" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Eco</a>
+                <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Services</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - Home -->
+        <section id="home" class="hero-bg py-24 sm:py-32 rounded-b-2xl shadow-xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-4 leading-tight">
+                    Shaping the Future, Today.
+                </h1>
+                <p class="text-xl sm:text-2xl text-indigo-200 mb-10">
+                    A Connected Community Focused on Sustainability, Efficiency, and People.
+                </p>
+                <a href="#tech" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-green-500 hover:bg-green-600 transition duration-150 ease-in-out transform hover:scale-105">
+                    Explore Our Smart Initiatives
+                </a>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="tech" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-indigo-700 mb-4">Technology & Data</h2>
+                <p class="text-xl text-center text-gray-500 mb-16">
+                    Leveraging AI and IoT to make urban systems intelligent and predictive.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-indigo-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-3xl text-indigo-600 mb-4">💡</div>
+                        <h3 class="text-2xl font-semibold mb-3">Smart Grids</h3>
+                        <p class="text-gray-600">Dynamic power distribution optimizing renewable energy consumption and minimizing waste across the network.</p>
+                    </div>
+                    <div class="bg-indigo-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-3xl text-indigo-600 mb-4">📡</div>
+                        <h3 class="text-2xl font-semibold mb-3">IoT Sensors</h3>
+                        <p class="text-gray-600">A network of environmental and infrastructure sensors providing real-time data for better governance.</p>
+                    </div>
+                    <div class="bg-indigo-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-3xl text-indigo-600 mb-4">🤖</div>
+                        <h3 class="text-2xl font-semibold mb-3">AI City Management</h3>
+                        <p class="text-gray-600">Predictive analytics for public safety, resource allocation, and utility maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transport Section -->
+        <section id="transport" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-green-700 mb-4">Intelligent Transport</h2>
+                <p class="text-xl text-center text-gray-500 mb-16">
+                    Seamless mobility through interconnected public and private transit systems.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/93c5fd/1e3a8a?text=Connected+Transit" alt="Connected Transit system" class="rounded-xl shadow-2xl">
+                    </div>
+                    <div>
+                        <ul class="space-y-6">
+                            <li class="flex items-start space-x-4">
+                                <span class="text-3xl text-green-500">🚆</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-900">Real-time Public Transit</h4>
+                                    <p class="text-gray-600">Accurate arrival times and dynamic routing updates delivered directly to your device.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-4">
+                                <span class="text-3xl text-green-500">🚦</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-900">Smart Traffic Lights</h4>
+                                    <p class="text-gray-600">Traffic signals adapt based on real-time flow and emergency vehicles, reducing congestion.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-4">
+                                <span class="text-3xl text-green-500">🚲</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-900">Micro-Mobility Integration</h4>
+                                    <p class="text-gray-600">Integrated bike-share and scooter networks with dedicated lanes for safety and efficiency.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section (Simulated) -->
+        <section id="map" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-center text-indigo-700 mb-4">Interactive City Map</h2>
+                <p class="text-xl text-center text-gray-500 mb-10">
+                    Your digital twin of the city, showing live data feeds, points of interest, and service availability.
+                </p>
+                <!-- Map Placeholder -->
+                <div class="w-full h-96 bg-gray-200 rounded-xl shadow-2xl flex items-center justify-center p-4">
+                    <div class="text-gray-500 text-lg">
+                        <p class="font-bold">LIVE MAP SIMULATION</p>
+                        <p>Real-time data points for Traffic, Parking, and Air Quality would be displayed here.</p>
+                        <span class="inline-block text-4xl mt-4">🗺️</span>
+                    </div>
+                </div>
+                <button onclick="alertMessage('Map interactions are currently simulated. Full map features coming soon!')" class="mt-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-indigo-500 hover:bg-indigo-600 transition duration-150 ease-in-out">
+                    View Data Dashboard
+                </button>
+            </div>
+        </section>
+
+        <!-- Eco Section -->
+        <section id="eco" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-green-700 mb-4">Eco & Sustainability</h2>
+                <p class="text-xl text-center text-gray-500 mb-16">
+                    Committed to a greener future through renewable resources and efficient waste management.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+                        <div class="text-3xl text-green-600 mb-4">♻️</div>
+                        <h3 class="text-2xl font-semibold mb-3">Zero-Waste Initiatives</h3>
+                        <p class="text-gray-600">Smart bins and dynamic recycling programs to maximize material recovery.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+                        <div class="text-3xl text-green-600 mb-4">☀️</div>
+                        <h3 class="text-2xl font-semibold mb-3">Renewable Energy</h3>
+                        <p class="text-gray-600">Investing in solar and wind power to achieve a 100% clean energy grid by 2030.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+                        <div class="text-3xl text-green-600 mb-4">💧</div>
+                        <h3 class="text-2xl font-semibold mb-3">Water Conservation</h3>
+                        <p class="text-gray-600">Intelligent water metering and leakage detection to protect our most vital resource.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-center text-indigo-700 mb-4">Citizen Services</h2>
+                <p class="text-xl text-center text-gray-500 mb-10">
+                    Access essential city functions and permits digitally, quickly, and conveniently.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="#" onclick="alertMessage('Redirecting to Housing Permit portal...')" class="block p-6 bg-blue-50 hover:bg-blue-100 rounded-xl transition duration-300 transform hover:scale-105 shadow">
+                        <span class="block text-4xl mb-2">🏠</span>
+                        <p class="font-semibold">Housing Permits</p>
+                    </a>
+                    <a href="#" onclick="alertMessage('Redirecting to Health Services portal...')" class="block p-6 bg-blue-50 hover:bg-blue-100 rounded-xl transition duration-300 transform hover:scale-105 shadow">
+                        <span class="block text-4xl mb-2">🏥</span>
+                        <p class="font-semibold">Health & Wellness</p>
+                    </a>
+                    <a href="#" onclick="alertMessage('Redirecting to Education portal...')" class="block p-6 bg-blue-50 hover:bg-blue-100 rounded-xl transition duration-300 transform hover:scale-105 shadow">
+                        <span class="block text-4xl mb-2">📚</span>
+                        <p class="font-semibold">Education System</p>
+                    </a>
+                    <a href="#" onclick="alertMessage('Redirecting to Payments portal...')" class="block p-6 bg-blue-50 hover:bg-blue-100 rounded-xl transition duration-300 transform hover:scale-105 shadow">
+                        <span class="block text-4xl mb-2">💳</span>
+                        <p class="font-semibold">Utility Payments</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-200">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-indigo-700 mb-4">Get In Touch</h2>
+                <p class="text-xl text-center text-gray-500 mb-10">
+                    Feedback, suggestions, or partnership inquiries.
+                </p>
+                
+                <form class="bg-white p-8 rounded-xl shadow-2xl space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" placeholder="you@smartcity.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" onclick="submitForm(event)" class="w-full px-4 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-150 ease-in-out transform hover:scale-[1.01]">
+                        Send Message
+                    </button>
+                    <p id="submission-message" class="text-center text-sm font-medium text-green-600 hidden"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between md:items-center">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold text-indigo-300 mb-2">SmartCityHub</h3>
+                    <p class="text-sm text-gray-400">Pioneering urban innovation for a better tomorrow.</p>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="#tech" class="text-gray-400 hover:text-white transition duration-150">Technology</a>
+                    <a href="#eco" class="text-gray-400 hover:text-white transition duration-150">Ecology</a>
+                    <a href="#services" class="text-gray-400 hover:text-white transition duration-150">Services</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-500">&copy; 2025 Smart City Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity and Navigation -->
+    <script>
+        // Custom replacement for alert()
+        function alertMessage(message) {
+            const tempDiv = document.createElement('div');
+            tempDiv.className = 'fixed top-4 right-4 bg-indigo-600 text-white p-4 rounded-lg shadow-xl transition-opacity duration-300 z-[9999]';
+            tempDiv.innerText = message;
+            document.body.appendChild(tempDiv);
+            setTimeout(() => {
+                tempDiv.style.opacity = '0';
+                setTimeout(() => tempDiv.remove(), 300);
+            }, 3000);
+        }
+
+        // Form submission simulation
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const submissionMsg = document.getElementById('submission-message');
+
+            if (name && email && message) {
+                // Simulate successful submission
+                submissionMsg.innerText = `Thank you, ${name}! Your message has been sent. We'll be in touch.`;
+                submissionMsg.classList.remove('hidden', 'text-red-600');
+                submissionMsg.classList.add('text-green-600');
+
+                // Clear the form fields
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+
+            } else {
+                submissionMsg.innerText = 'Please fill out all fields.';
+                submissionMsg.classList.remove('hidden', 'text-green-600');
+                submissionMsg.classList.add('text-red-600');
+            }
+            submissionMsg.style.display = 'block';
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu on link click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Highlight Active Nav Link based on scroll position (Advanced)
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('main section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const options = {
+                root: null, // viewport
+                threshold: 0.3, // 30% visible
+                rootMargin: "0px 0px -50% 0px" // Adjusted to activate sooner
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const currentSectionId = entry.target.id;
+                        
+                        // Update Desktop Links
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === currentSectionId) {
+                                link.classList.add('active');
+                            }
+                        });
+
+                        // Update Mobile Links
+                        mobileNavLinks.forEach(link => {
+                            link.classList.remove('bg-indigo-600', 'text-white');
+                            link.classList.add('text-gray-700', 'hover:bg-gray-50', 'hover:text-gray-900');
+                            
+                            if (link.getAttribute('href').substring(1) === currentSectionId) {
+                                link.classList.remove('text-gray-700', 'hover:bg-gray-50', 'hover:text-gray-900');
+                                link.classList.add('bg-indigo-600', 'text-white');
+                            }
+                        });
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
